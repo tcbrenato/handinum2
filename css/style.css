@@ -15,6 +15,8 @@ body{
 
 
 
+
+
 .container{
     padding: 0px 67px;
 }
@@ -67,6 +69,10 @@ list-style: none;
     font-size: 20px;
     font-weight: 500;
     font-style: normal;
+}
+
+.navbar-mobile{
+    display: none;
 }
 
 /* fin de style d'entête */
@@ -188,12 +194,35 @@ list-style: none;
 } */
 
 @media screen and (max-width:426px){
+     
+    /*---------------------------Début style d'entête mobile-----------------------*/
+    .navbar-desktop{
+        display: none;
+    }
     .navbar .group-link, .navbar .nav-block-button{
        display: none;
     }
     .navbar{
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
     }
+
+    .navbar .logo{
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar .logo img{
+        width: 70%;
+    }
+
+    .nav-icon{
+        font-size: 2em;
+    }
+
+    /*----------------------------fin style d'entête mobile-------------------------*/
+
+
     .section1 .section1-row1{
         flex-direction: column;
         justify-content: center;
@@ -227,13 +256,14 @@ list-style: none;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 20px;
     }
 
     .section1 .section1-row1 .col2 img{
         width: 100%;
     }
     .container{
-        padding: 0px 40px;
+        padding: 0px 30px;
     }
     .section1{
         padding-top: 145px;
@@ -247,6 +277,8 @@ list-style: none;
         display: flex;
         margin-top: 20px;
     }
+
+    
 
     
 
